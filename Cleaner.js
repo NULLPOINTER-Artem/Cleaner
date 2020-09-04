@@ -21,7 +21,7 @@ console.log(massive);
  * Функция удаляет пустые объекты из массива объектов
  * 
  * @param {object} array массив объектов
- * @returns Возвращает измененный массив объектов 
+ * @returns {object} Возвращает измененный массив объектов 
  */
 function cleanEmptyObjects(array) {
     for (let i = array.length - 1; i >= 0; i--) {
@@ -37,7 +37,7 @@ function cleanEmptyObjects(array) {
  * Функция определяет есть-ли у объекта свои свойства, если нету - объект пуст!
  * 
  * @param {object} obj объект
- * @returns true/false зависимо от выполнения условия 
+ * @returns {boolean} true/false зависимо от выполнения условия 
  */
 function isEmpty(obj) {
     if (Object.keys(obj).length === 0) {
